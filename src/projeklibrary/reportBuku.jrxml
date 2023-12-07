@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fb65de73-fee0-4ca6-b244-3ce5409f3f00">
+	<property name="ireport.zoom" value="1.3310000000000004"/>
+	<property name="ireport.x" value="31"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#8B0000">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="a31ec43c-9039-41ef-b970-635b24284a2e"/>
+	<parameter name="querySearch" class="java.lang.String"/>
+	<parameter name="searchBy" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[select * from buku]]>
+	</queryString>
+	<field name="idBuku" class="java.lang.String"/>
+	<field name="judul" class="java.lang.String"/>
+	<field name="isbn" class="java.lang.String"/>
+	<field name="bahasa" class="java.lang.String"/>
+	<field name="penerbit" class="java.lang.String"/>
+	<field name="tahunTerbit" class="java.lang.String"/>
+	<field name="jumlahHalaman" class="java.lang.Integer"/>
+	<field name="jumlahBuku" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="110" splitType="Stretch">
+			<staticText>
+				<reportElement x="170" y="0" width="294" height="34" uuid="43dabc60-fb95-4fdb-8846-212614090463"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA BUKU ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="34" width="385" height="34" uuid="dd70defb-4ded-45d5-88c7-d1d8a64047c3"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PERPUSTAKAAN BOOKCAMPS]]></text>
+			</staticText>
+			<frame>
+				<reportElement x="24" y="0" width="109" height="79" uuid="7034b01b-e021-4e28-ab04-bac09cfded01"/>
+				<image>
+					<reportElement x="0" y="0" width="81" height="79" uuid="d2c50213-f6d5-4695-befb-603ad7b30b04"/>
+					<imageExpression><![CDATA["D:\\2023\\SEMESTER 3\\PROJEK UAS\\logo rf\\bookcamps 50 px-02-02-02.png"]]></imageExpression>
+				</image>
+			</frame>
+			<line>
+				<reportElement x="0" y="108" width="555" height="2" uuid="6cf51271-adba-4402-9064-9e14394e71aa"/>
+			</line>
+			<textField pattern="dd/MM/yyyy h.mm a">
+				<reportElement x="443" y="79" width="100" height="20" uuid="4e7dfd74-3a7e-487b-b363-4a8c63cda45a"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="521" height="20" uuid="bc39faa3-1c23-4d47-be66-8832463f68d5"/>
+				<textFieldExpression><![CDATA[" hasil pencarian dari " + $P{querySearch} + " berdasarkan pada kolom " + $P{searchBy} + " hasilnya adalah: "]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="38" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="6" width="71" height="20" forecolor="#FFFFFF" backcolor="#660000" uuid="ea3d0fc0-be9c-442b-8bd8-4664a6fe3ac4"/>
+				<text><![CDATA[ID Buku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="357" y="6" width="71" height="20" forecolor="#FFFFFF" backcolor="#660000" uuid="f2ed40bd-fad2-43ff-844e-421d3df5130e"/>
+				<text><![CDATA[Penerbit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="219" y="6" width="65" height="20" forecolor="#FFFFFF" backcolor="#660000" uuid="ff6e513f-d2fb-49b8-8b79-3a2b1aed74b9"/>
+				<text><![CDATA[Tahun]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="171" y="6" width="48" height="20" forecolor="#FFFFFF" backcolor="#660000" uuid="94269ebf-92c4-4791-985d-89e4190396c2"/>
+				<text><![CDATA[ISBN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="428" y="6" width="59" height="20" forecolor="#FFFFFF" backcolor="#660000" uuid="36e9266b-1d47-4cd3-95e8-fe81824c553c"/>
+				<text><![CDATA[Jml_Hal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="284" y="6" width="73" height="20" forecolor="#FFFFFF" backcolor="#660000" uuid="b365a0d3-c571-4626-84e3-f96b38751059"/>
+				<text><![CDATA[ Bahasa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="71" y="6" width="100" height="20" forecolor="#FFFFFF" backcolor="#660000" uuid="be45e4ce-6a58-4d21-ae2e-5aad900f90cc"/>
+				<text><![CDATA[Judul]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="487" y="6" width="68" height="20" forecolor="#FFFFFF" backcolor="#660000" uuid="5b9c0922-2074-4965-a783-6fa79301db45"/>
+				<text><![CDATA[Jml_Buku]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="71" height="31" uuid="fff46dd3-a861-46e4-a84e-f534fe1d4408"/>
+				<textFieldExpression><![CDATA[$F{idBuku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="71" y="0" width="100" height="31" uuid="aa6da07f-10b4-4137-b34a-b0541f7147fc"/>
+				<textFieldExpression><![CDATA[$F{judul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="171" y="0" width="48" height="31" uuid="e79363ed-3cfd-4b34-8254-431e50b49234"/>
+				<textFieldExpression><![CDATA[$F{isbn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="219" y="0" width="65" height="31" uuid="100e26d9-a458-4b77-86be-48d73bc6de96"/>
+				<textFieldExpression><![CDATA[$F{tahunTerbit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="284" y="0" width="73" height="31" uuid="a4e26438-0110-47b8-98af-d925d91045f3"/>
+				<textFieldExpression><![CDATA[$F{bahasa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="357" y="0" width="71" height="31" uuid="fdac4f26-464b-45b6-b28f-a311b02b5884"/>
+				<textFieldExpression><![CDATA[$F{penerbit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="428" y="0" width="59" height="31" uuid="5452f827-91cb-46fa-9135-a8382df0fe3d"/>
+				<textFieldExpression><![CDATA[$F{jumlahHalaman}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="487" y="0" width="68" height="31" uuid="22f7329d-d143-4cc3-8325-41d4cde51eb4"/>
+				<textFieldExpression><![CDATA[$F{jumlahBuku}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="9" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="10" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="8" splitType="Stretch"/>
+	</summary>
+</jasperReport>
