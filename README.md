@@ -1,12 +1,24 @@
 # Program Aplikasi Perpustakaan BookCamps
 Menurut Wikipedia pemrograman berorientasi objek atau object-oriented programming yang biasa disingkat OOP merupakan paradigma pemrograman berdasarkan konsep "objek", yang dapat beris data, dalam bentuk field atau dikenal juga sebagai atribut; serta kode, dalam bentuk fungsi/prosedur atau dikenal juga sebagai method. Semua data dan fungsi di dalam paradigma ini dibungkus dalam kelas-kelas atau objek-objek. Bandingkan dengan logika pemrograman terstruktur. Setiap objek dapat menerima pesan, memproses data, dan mengirim pesan ke objek lainnya. Berikut cakupan dasar pemrograman berbasis objek:
 
-Kelas dan Objek: • Definisi Kelas: Kelas adalah struktur dasar dalam OOP yang mendefinisikan atribut (variabel) dan metode (fungsi) yang dapat dimiliki oleh suatu objek. • Objek: Objek adalah instansi konkret dari suatu kelas. Setiap objek memiliki atribut yang unik dan dapat memanggil metode khususnya.
-Inheritance (Pewarisan): • Konsep Pewarisan: Inheritance memungkinkan kelas baru ("subclass" atau "child class") mewarisi atribut dan metode dari kelas yang sudah ada ("superclass" atau "parent class"). • Keuntungan: Meningkatkan reusable code dan memfasilitasi pengelolaan hierarki kelas.
-Polimorfisme: • Arti Polimorfisme: Polimorfisme memungkinkan suatu metode memiliki nama yang sama tetapi dapat melakukan tindakan yang berbeda tergantung pada objek yang memanggilnya. • Contoh Penggunaan: Metode overriding dan interface adalah implementasi polimorfisme dalam OOP.
-Encapsulation (Enkapsulasi): • Prinsip Enkapsulasi: Enkapsulasi melibatkan pengemasan atribut dan metode ke dalam satu unit tunggal (kelas), dengan mengakses atribut menggunakan metode (getters dan setters). • Keuntungan: Menyediakan kontrol akses yang lebih baik dan membatasi akses langsung ke atribut.
-Abstraksi: • Arti Abstraksi: Abstraksi melibatkan penyembunyian detail implementasi dan hanya mengekspos fungsionalitas penting suatu objek. • Implementasi di OOP: Interface dan kelas abstrak digunakan untuk menciptakan tingkat abstraksi.
-Class Diagram: • Definisi Class Diagram: Class diagram adalah representasi visual dari struktur kelas, hubungan antar kelas, dan sifat atribut dan metode. • Manfaat: Memberikan pandangan visual yang jelas tentang hubungan antar objek dalam suatu sistem.
+Kelas dan Objek: 
+• Definisi Kelas: Kelas adalah struktur dasar dalam OOP yang mendefinisikan atribut (variabel) dan metode (fungsi) yang dapat dimiliki oleh suatu objek. 
+• Objek: Objek adalah instansi konkret dari suatu kelas. Setiap objek memiliki atribut yang unik dan dapat memanggil metode khususnya.
+Inheritance (Pewarisan): 
+• Konsep Pewarisan: Inheritance memungkinkan kelas baru ("subclass" atau "child class") mewarisi atribut dan metode dari kelas yang sudah ada ("superclass" atau "parent class").
+• Keuntungan: Meningkatkan reusable code dan memfasilitasi pengelolaan hierarki kelas.
+Polimorfisme: 
+• Arti Polimorfisme: Polimorfisme memungkinkan suatu metode memiliki nama yang sama tetapi dapat melakukan tindakan yang berbeda tergantung pada objek yang memanggilnya. 
+• Contoh Penggunaan: Metode overriding dan interface adalah implementasi polimorfisme dalam OOP.
+Encapsulation (Enkapsulasi): 
+• Prinsip Enkapsulasi: Enkapsulasi melibatkan pengemasan atribut dan metode ke dalam satu unit tunggal (kelas), dengan mengakses atribut menggunakan metode (getters dan setters). 
+• Keuntungan: Menyediakan kontrol akses yang lebih baik dan membatasi akses langsung ke atribut.
+Abstraksi: 
+• Arti Abstraksi: Abstraksi melibatkan penyembunyian detail implementasi dan hanya mengekspos fungsionalitas penting suatu objek. 
+• Implementasi di OOP: Interface dan kelas abstrak digunakan untuk menciptakan tingkat abstraksi.
+Class Diagram: 
+• Definisi Class Diagram: Class diagram adalah representasi visual dari struktur kelas, hubungan antar kelas, dan sifat atribut dan metode. 
+• Manfaat: Memberikan pandangan visual yang jelas tentang hubungan antar objek dalam suatu sistem.
 Persistence API: Sebuah antarmuka pemrograman aplikasi (API) yang menyediakan metode dan fungsi untuk melakukan operasi persistence, seperti menyimpan, mengambil, dan menghapus data.
 
 ## Tech
