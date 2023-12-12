@@ -582,30 +582,28 @@ public class MenuPeminjaman extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(tf_pembimbing)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(tf_penulisskrip, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel24)
-                                .addGroup(jPanel4Layout.createSequentialGroup()
-                                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel23))
-                                    .addGap(18, 18, 18)
-                                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(tf_tahunskrip)
-                                        .addComponent(tf_bahasaskrip)
-                                        .addComponent(tf_prodiskrip)
-                                        .addComponent(tf_judulskrip)
-                                        .addGroup(jPanel4Layout.createSequentialGroup()
-                                            .addComponent(tf_idskrip, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(tf_penulisskrip, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel24)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel23))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(tf_tahunskrip)
+                                    .addComponent(tf_bahasaskrip)
+                                    .addComponent(tf_prodiskrip)
+                                    .addComponent(tf_judulskrip)
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addComponent(tf_idskrip, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(36, 36, 36)
@@ -692,7 +690,7 @@ public class MenuPeminjaman extends javax.swing.JPanel {
                         .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(tf_noPeminjaman, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(150, Short.MAX_VALUE))
+                .addContainerGap(140, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pn_inputLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addGroup(pn_inputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1045,7 +1043,7 @@ public class MenuPeminjaman extends javax.swing.JPanel {
         );
 
         tf_cari.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
-        tf_cari.setForeground(new java.awt.Color(204, 204, 204));
+        tf_cari.setForeground(new java.awt.Color(255, 255, 255));
         tf_cari.setText("Cari");
         tf_cari.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         tf_cari.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -1058,6 +1056,7 @@ public class MenuPeminjaman extends javax.swing.JPanel {
         });
 
         btn_cari.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        btn_cari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/Search.png"))); // NOI18N
         btn_cari.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_cariActionPerformed(evt);
@@ -1348,6 +1347,8 @@ public class MenuPeminjaman extends javax.swing.JPanel {
         Panel_Utama.add(pn_input);
         Panel_Utama.repaint();
         Panel_Utama.revalidate();
+        
+        //MenuUtama.aktif = false;
 
 
     }//GEN-LAST:event_btn_tambahActionPerformed
@@ -1355,7 +1356,7 @@ public class MenuPeminjaman extends javax.swing.JPanel {
     private void btn_hapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_hapusActionPerformed
         String s = (String) tbl_isi.getValueAt(tbl_isi.getSelectedRow(), 1);
         if (JOptionPane.showConfirmDialog(null, "Menghapus peminjaman dengan NO " + s, "Apakah anda yakin", 0, 0) == 0) {
-            servisBuku.hapusData((String) tbl_isi.getValueAt(tbl_isi.getSelectedRow(), 1));
+            servisBuku.hapusData((String) tbl_isi.getValueAt(tbl_isi.getSelectedRow(), 0));
         }
         loadData();
 
@@ -1532,9 +1533,9 @@ public class MenuPeminjaman extends javax.swing.JPanel {
             
             Map<String, Object> parameter = new HashMap<>();
             parameter.put("nama", p.get(0).getPeminjam().getNama());
-            parameter.put("tglPinjam", p.get(0).getTanggalPinjam());
-            parameter.put("tglKembali",p.get(0).getTanggalKembali());
-            String jrxmlFile = "src/projeklibrary/reportBuku.jrxml";
+            parameter.put("tgl1", p.get(0).getTanggalPinjam().toString());
+            parameter.put("tgl2",p.get(0).getTanggalKembali().toString());
+            String jrxmlFile = "src/projeklibrary/LaporanPeminjaman.jrxml";
             JasperReport jr = JasperCompileManager.compileReport(jrxmlFile);
             JasperPrint jp = JasperFillManager.fillReport(jr, parameter, new JRBeanCollectionDataSource(p.get(0).getDetailBukuCollection()));
             JasperViewer.viewReport(jp, false);
@@ -1666,6 +1667,7 @@ public class MenuPeminjaman extends javax.swing.JPanel {
     private void loadData() {
         List<Peminjaman> list = servisBuku.ambillData();
         DefaultTableModel tbl = (DefaultTableModel) tbl_isi.getModel();
+        tbl.setRowCount(0);
 
         Panel_Utama.removeAll();
         Panel_Utama.repaint();
@@ -1696,7 +1698,7 @@ public class MenuPeminjaman extends javax.swing.JPanel {
     private void resetForm() {
         btn_hapus1.setVisible(false);
         btn_batal3.setVisible(false);
-        //tf_no.setText(servisBuku.nomer());
+        tf_noPeminjaman.setText(new servisBuku().nomer());
         Date now = new Date();
         SimpleDateFormat tanggal = new SimpleDateFormat("yyyy-MM-dd");
         tf_tglPinjam.setText(tanggal.format(now));

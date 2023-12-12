@@ -16,7 +16,6 @@ import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import static projeklibrary.Peminjaman_.status;
 
-
 /**
  *
  * @author LUI
@@ -36,7 +35,7 @@ public class servisBuku {
     }
 
     static void ubahData(Peminjaman mod) {
-         EntityManager em = Persistence.createEntityManagerFactory("ProjekLibraryPU").createEntityManager();
+        EntityManager em = Persistence.createEntityManagerFactory("ProjekLibraryPU").createEntityManager();
         em.getTransaction().begin();
         em.merge(mod);
         em.getTransaction().commit();
@@ -53,9 +52,7 @@ public class servisBuku {
         return list;
     }
 
-   
-     servisPeminjaman servis = new servisPeminjaman();
-
+    servisPeminjaman servis = new servisPeminjaman();
 
     static void hapusData(String id) {
         String sql = "DELETE FROM DETAIL_SKRIPSI WHERE NO_PEMINJAMAN = ?;\n"
@@ -71,13 +68,13 @@ public class servisBuku {
         em.getTransaction().commit();
         em.close();
     }
-    
+
     static void ubahData(Buku_1 mod) {
         String sql = "DELETE FROM PENGARANG WHERE ID_BUKU = ?; DELETE FROM KATEGORI_BUKU WHERE ID_BUKU = ?;";
         EntityManager em = Persistence.createEntityManagerFactory("ProjekLibraryPU").createEntityManager();
         em.getTransaction().begin();
         Buku_1 p = em.find(Buku_1.class, mod.getIdBuku());
-      
+
         Query query = em.createNativeQuery(sql);
         query.setParameter(1, mod.getIdBuku());
         query.setParameter(2, mod.getIdBuku());
@@ -294,7 +291,7 @@ public class servisBuku {
         em.close();
         return list;
     }
-    
+
     public int jumlahBuku() {
         EntityManager em = Persistence.createEntityManagerFactory("ProjekLibraryPU").createEntityManager();
         em.getTransaction().begin();
@@ -308,7 +305,7 @@ public class servisBuku {
     public String nomer() {
         EntityManager em = Persistence.createEntityManagerFactory("ProjekLibraryPU").createEntityManager();
         String jpql = "SELECT SUBSTRING(b.idBuku, LENGTH(b.idBuku) - 2) AS nomor "
-                + "FROM Buku b WHERE b.idBuku LIKE 'BK%' ORDER BY b.idBuku DESC";
+                + "FROM Buku_1 b WHERE b.idBuku LIKE 'BK%' ORDER BY b.idBuku DESC";
         TypedQuery<String> query = em.createQuery(jpql, String.class);
         query.setMaxResults(1);
         Date now = new Date();
@@ -329,17 +326,15 @@ public class servisBuku {
     public int jmlDipinjam(String id) {
         List<Peminjaman> p = servisBuku.getBystatus("Dipinjam");
         int i = 0;
-        for(Peminjaman pem : p){
+        for (Peminjaman pem : p) {
             List<DetailBuku> db = new ArrayList(pem.getDetailBukuCollection());
-            for(DetailBuku b : db){
-                if(b.getBuku().getIdBuku().equalsIgnoreCase(id)){
+            for (DetailBuku b : db) {
+                if (b.getBuku().getIdBuku().equalsIgnoreCase(id)) {
                     i += b.getJumlah();
                 }
             }
         }
         return i;
     }
-    
-    
 
 }

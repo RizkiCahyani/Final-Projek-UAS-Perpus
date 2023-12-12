@@ -21,6 +21,7 @@ public class MenuUtama extends javax.swing.JFrame {
      * Creates new form MenuUtama
      */
     public static Petugas mod = new Petugas();
+    public static boolean aktif = true;
             
     public MenuUtama() {
         initComponents();

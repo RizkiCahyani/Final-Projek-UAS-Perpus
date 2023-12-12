@@ -129,7 +129,7 @@ public class MenuSkripsi extends javax.swing.JPanel {
             }
         });
 
-        Pilihan.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ISBN", "Judul Buku", "Id Buku", "Tahun Terbit" }));
+        Pilihan.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ID Skripsi", "Judul", "Penulis", "Tahun " }));
 
         btn_tambah.setText("TAMBAH");
         btn_tambah.addActionListener(new java.awt.event.ActionListener() {
@@ -213,7 +213,8 @@ public class MenuSkripsi extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_cariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cariActionPerformed
-        // TODO add your handling code here:
+                
+            
     }//GEN-LAST:event_btn_cariActionPerformed
 
     private void btn_tambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tambahActionPerformed
@@ -389,5 +390,5 @@ public class MenuSkripsi extends javax.swing.JPanel {
         em.close();
         return list;
     }
-
+   
 }

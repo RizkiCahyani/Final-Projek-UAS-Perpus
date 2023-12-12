@@ -112,7 +112,7 @@ public class servisPeminjaman {
     }
 
     public List<Peminjaman> getByNO(String no) {
-        String sql = "SELECT p FROM Peminjaman p WHERE LOWER(p.peminjamanPK.noPeminjaman) = :noPeminjaman";
+        String sql = "SELECT p FROM Peminjaman p WHERE LOWER(p.peminjamanPK.noPeminjaman) LIKE :noPeminjaman";
         EntityManager em = Persistence.createEntityManagerFactory("ProjekLibraryPU").createEntityManager();
         em.getTransaction().begin();
         Query query = em.createQuery(sql);
